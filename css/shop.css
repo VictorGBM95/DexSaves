@@ -96,7 +96,10 @@ nav {
 }
 
 .nav__grid {
-    justify-content: space-around;
+    justify-self: center;
+    width: 85%;
+    display: flex;
+    justify-content: space-evenly;
     align-content: center;
 }
 
