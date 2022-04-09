@@ -33,13 +33,9 @@ header {
     align-content: center;
 }
 
-/* header img {
-    width: 100px;
-    height: 100px;
-} */
 
 nav {
-    display: grid;
+    display: flex;
     grid-template-columns: 5fr;
     justify-content: space-around;
     align-items: center;
@@ -68,44 +64,26 @@ nav {
     margin: 0;
 }
 
-ul {
-    list-style: none;
-}
-
-li {
-    display: inline-block;
-    border: 3px double rgb(121, 4, 4);
-    width: 15%;
-    position: relative;
+.nav__item {
+    text-decoration: none;
+    text-align: center;
     font-size: 30px;
     font-family: 'Amatic SC', cursive;
+    color: antiquewhite;
+    width: 15%;
     background-color: maroon;
-    padding: 5px;
+    border: antiquewhite 2px solid;
 }
 
-li a {
+.nav__item:hover {
+    transform: scale(1.1);
+    background-color: rgb(54, 0, 0);
+}
+
+.nav__item a {
     text-decoration: none;
     color: antiquewhite;
-}
 
-ul ul {
-    position: absolute;
-    display: none;
-    width: 100%;
-    margin-top: 5px;
-    margin-left: -50px;
-}
-
-ul ul li {
-    border: 2px double rgb(121, 4, 4);
-    display: block;
-    width: 100%;
-    background-color: rgb(122, 11, 11);
-}
-
-ul li:hover ul {
-    display: block;
-    z-index: 2;
 }
 
 .new_footer {
@@ -120,25 +98,6 @@ ul li:hover ul {
 .nav__grid {
     justify-content: space-around;
     align-content: center;
-}
-
-.nav__grid ul {
-    text-align: center;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: center;
-}
-
-.nav__grid ul li a {
-    text-decoration: none;
-    color: antiquewhite;
-}
-
-.nav__grid ul ul {
-    display: none;
 }
 
 .title {
@@ -191,6 +150,11 @@ ul li:hover ul {
     color: antiquewhite;
     align-items: center;
 
+}
+
+.shop__images {
+    height: 75%;
+    width: 75%;
 }
 
 .item1 {
@@ -334,11 +298,6 @@ ul li:hover ul {
             "footer";
     }
 
-    ul {
-        margin: 0%;
-        padding: 0%;
-    }
-
     .new_footer {
         display: flex;
         grid-area: footer;
@@ -378,10 +337,20 @@ ul li:hover ul {
         margin: 0;
     }
 
-    .nav__grid {
+    .nav__grid ul {
+        width: 100%;
+        text-align: center;
+        list-style: none;
         display: flex;
-        justify-content: center;
-        align-content: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+
+    .nav__item {
+        width: 20%;
+        font-size: 16px;
+        margin: 5px;
     }
 
     .nav__grid ul {
@@ -574,6 +543,13 @@ ul li:hover ul {
         font-family: 'Amatic SC', cursive;
         color: rgb(255, 255, 255);
         font-weight: 200;
+    }
+
+    
+    .nav__item {
+        width: 20%;
+        font-size: 16px;
+        margin: 5px;
     }
 
 }
