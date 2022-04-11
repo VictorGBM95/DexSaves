@@ -34,6 +34,16 @@ body {
 .nav__item:hover {
     transform: scale(1.1);
     background-color: rgb(54, 0, 0);
+    transition-duration: 300ms;
+}
+
+.footer__icon {
+    color: antiquewhite;
+}
+
+.footer__icon img:hover {
+    transform: scale(1.25);
+    transition-duration: 300ms;
 }
 
 .nav__item a {
